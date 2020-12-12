@@ -36,7 +36,7 @@ def scrape(url):
     return e.extract(r.text)
 
 # product_data = []
-with open("urls.txt",'r') as urllist, open('output.jsonl','w') as outfile:
+with open("settings/product_pages.txt",'r') as urllist, open('output/products.jsonl','w') as outfile:
     for url in urllist.read().splitlines():
         data = scrape(url) 
         if data:
