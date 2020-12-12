@@ -6,7 +6,7 @@ import csv
 from dateutil import parser as dateparser
 
 # Create an Extractor by reading from the YAML file
-e = Extractor.from_yaml_file('selectors.yml')
+e = Extractor.from_yaml_file('selectors/reviews.yml')
 
 def scrape(url):    
     headers = {
